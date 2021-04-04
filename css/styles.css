@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.wrapper,
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.container {
+    max-width: 1400px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.btn{
+ font-size: 1rem;
+ color: white;
+ background-color: black;
+ padding: 10px 30px;
+ border-radius: 2px;
+ text-decoration:none;
+ transition: 0.3s all;
+}
+
+.btn:hover{
+    background-color: green;
+}
+
+
+/* HEADER  */
+header {
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+
+.header-scroll.fixed {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+}
+
+/* In case with a real logo */
+.logo {
+    width: 130px;
+    height: 100px;
+}
+
+.logo img,
+.logo a {
+    width: 100%; 
+    height: 100%;
+    display: block;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav li {
+    margin: 0px 12px;
+    list-style: none;
+}
+.nav li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+.nav li a:hover {
+color: green;
+text-decoration: underline;
+}
+
+.mobile-menu-toggle {
+    display:none;
+}
+
+/* HEADER END  */
+
+
+
+
+
+/* SLIDER */
+ #slider ul{
+    list-style: none outside none;
+    padding-left: 0;
+    margin: 0;
+    height: auto;
+    max-height: 500px;
+}
+
+#slider .content-slider li{
+    background-color: #ed3020;
+    text-align: center;
+    color: #FFF;
+}
+#slider .content-slider h3 {
+    margin: 0;
+    padding: 70px 0;
+}
+#slider .demo{
+    width: 100%;
+    
+}
+#slider li {
+    position: relative;
+    height: 100%;
+}
+#slider .slider-text {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#slider li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider-inner-box h2 {
+    font-weight: bold;
+    font-size: 4rem;
+    color: white;
+}
+.slider-inner-box p {
+    font-size: 2rem;
+    color: white;
+}
+  
+/* SLIDER END */
+
+/* 2-ND BLOCK */
+#section2 {
+    padding: 60px 0px;
+}
+.flexbox-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexbox-container .left-box {
+    padding-right: 40px;
+    width: 50%;
+}
+.flexbox-container .right-box{
+    width: 50%;
+    text-align: center;
+}
+embed {
+    width: 100%;
+    max-width: 423px;
+    height: auto;
+    min-height: 250px;
+}
+
+#section2 h1 {
+    font-size: 1.3rem;
+    margin-bottom:15px;
+}
+
+
+
+
+/* 2-ND BLOCK END */
+
+
+/* 3-RD BLOCK */
+#section3 {
+    padding: 60px 0px;
+    width: 100%;
+    height: auto;
+    background-color: #84fb95;
+    background-image: linear-gradient(315deg, #84fb95 0%, #cef576 74%);
+    text-align: center;
+}
+
+.list-of-boxes ul {
+margin: 0px 0px 50px 0px;
+padding: 0px;
+display: flex;
+    justify-content: space-between;
+}
+.list-of-boxes li {
+    list-style-type: none;
+    text-align:  left;
+    margin: 0px 30px;
+    background-color: grey;
+    padding: 20px 15px;
+    border-radius: 5px;
+    color: white;
+    line-height: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.list-of-boxes li h2 {
+    margin-bottom: 20px;
+}
+.list-of-boxes li p {
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+.image-box,
+.text-box {
+position: absolute;
+left: 0px;
+top: -200px;
+width: 100%;
+height: 100%;
+opacity: 0;
+transition: 0.3s all;
+
+}
+
+.text-box {
+    background-color: white;
+    top: 0px;
+    color: black;
+    padding: 20px 15px;
+}
+.image-box img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+    border: 10px solid grey;
+}
+.list-of-boxes li:hover .image-box,
+.list-of-boxes li:hover .text-box {
+    opacity: 1;
+    top:  0px;
+}
+
+
+/*  3-RD BLOCK END */
+
+
+
+/*  FOOTER */
+
+#footer {
+    padding: 15px 0px;
+    
+
+}
+
+#footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+.social ul li{ 
+    list-style: none;
+    margin: 0px 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.social ul li a {
+    display: block;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    text-align: center;
+    line-height: 20px;
+    transition: 0.3s all;
+}
+.social ul li a:hover {
+    background-color: green;
+}
+
+.social i { 
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/*  FOOTER END */
+
+
+
+
+/* ANIMATION */
+
+
+.flexbox-container .left-box {
+    animation: startanimation-left 1s ;
+    position: relative;
+}
+
+.flexbox-container .right-box {
+    animation: startanimation-right 1s ;
+    position: relative;
+}
+
+#section3 .container {
+    animation: startanimation-opacity 3s ;
+    position: relative;
+}
+
+@keyframes startanimation-left {
+    from {left: -300px; opacity: 0;}
+    to {left: 0px; opacity: 1;}
+  }
+
+  @keyframes startanimation-right {
+    from {right: -300px; opacity: 0;}
+    to {right: 0px; opacity: 1;}
+  }
+
+
+  @keyframes startanimation-opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
