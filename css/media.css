@@ -13,7 +13,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .mobile-header-nav {
     background-color: #222222;
     display: block;
